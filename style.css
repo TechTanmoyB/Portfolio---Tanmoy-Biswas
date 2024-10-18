@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    padding: 2vw;
+    background-color: black;
+    color: burlywood;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border: 5px solid burlywood;
+    flex-wrap: wrap;
+}
+
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: burlywood;
+}
+
+
+input#menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: burlywood;
+    margin-bottom: 4px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 1rem 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    input#menu-toggle:checked ~ nav {
+        display: flex;
+    }
+}
+
+.text-center {
+    text-align: center;
+    margin: 2vw 0;
+}
+
+li a {
+    color: burlywood;
+    text-decoration: none;
+    border-bottom: 1px solid burlywood;
+    font-size: large;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 5px solid burlywood;
+    border-bottom: 5px solid burlywood;
+    margin: 2vw 0;
+    padding: 1rem;
+}
+
+.content > div {
+    flex: 1 1 30%;
+    margin: 1rem;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid burlywood;
+    margin: 1rem 0;
+}
+
+.section-title {
+    font-weight: bold;
+    padding: 1%;
+}
+
+.education p{
+    border-bottom: 1px solid burlywood;
+    padding: 1%;
+}
+
+a{
+    color: burlywood;
+}
+
+
+.review-card {
+    border: 3px solid burlywood;
+    border-radius: 0.625rem;
+    padding: 1rem;
+    margin: 1rem;
+    flex: 1 1 30%; 
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.teacher-detail {
+    color: gray;
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    padding: 1rem;
+    border: 5px solid burlywood;
+}
